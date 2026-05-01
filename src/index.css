@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #10b981; /* Emerald 500 */
+  --color-secondary: #0ea5e9; /* Sky 500 */
+  --font-sans: 'Inter', sans-serif;
+}
+
+@custom-variant dark (&:is(.dark *));
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-white text-slate-900 font-sans antialiased selection:bg-emerald-200 selection:text-emerald-900 transition-colors duration-500;
+  }
+  .dark body {
+    @apply bg-[#0a0a0a] text-slate-100 selection:bg-emerald-500/30 selection:text-emerald-200;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-white/80 backdrop-blur-md border-b border-slate-200/80 shadow-sm transition-colors duration-300;
+  }
+  .dark .glass {
+    @apply bg-[#0a0a0a]/80 border-white/5 shadow-none;
+  }
+  
+  .glass-card {
+    @apply bg-white/70 backdrop-blur-md border border-slate-200 shadow-sm hover:shadow-lg hover:-translate-y-1 hover:bg-white/90 transition-all duration-300;
+  }
+  .dark .glass-card {
+    @apply bg-white/5 border-white/10 hover:bg-white/10 shadow-none;
+  }
+
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-emerald-500 to-sky-500;
+  }
+  .dark .text-gradient {
+    @apply from-emerald-400 to-sky-400;
+  }
+
+  .bento-grid {
+    @apply grid grid-cols-1 md:grid-cols-3 gap-6 md:auto-rows-[250px];
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-slate-50 dark:bg-[#0a0a0a];
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-slate-300 rounded-full dark:bg-slate-700;
+}
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-slate-400 dark:bg-slate-600;
+}
