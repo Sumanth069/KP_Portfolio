@@ -44,7 +44,7 @@ function App() {
       </main>
       
       <footer className="text-center py-10 text-slate-500 text-sm border-t border-slate-200 mt-20 bg-white/50 backdrop-blur-md">
-        <p>© {new Date().getFullYear()} KP Sumanth. Built with React & Tailwind.</p>
+        <p>© {new Date().getFullYear()} KP Sumanth.</p>
       </footer>
     </div>
   )
