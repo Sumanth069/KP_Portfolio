@@ -29,11 +29,11 @@ function App() {
 
   return (
     <div className="min-h-screen relative overflow-x-hidden transition-colors duration-500 selection:bg-emerald-200 selection:text-emerald-900 dark:selection:bg-emerald-500/30 dark:selection:text-emerald-200">
-      
+
       <ParticlesBackground />
 
       <Navbar />
-      
+
       <main className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-12">
         <Hero />
         <About />
@@ -42,7 +42,7 @@ function App() {
         <Projects />
         <Contact />
       </main>
-      
+
       <footer className="text-center py-10 text-slate-500 text-sm border-t border-slate-200 mt-20 bg-white/50 backdrop-blur-md">
         <p>© {new Date().getFullYear()} KP Sumanth.</p>
       </footer>

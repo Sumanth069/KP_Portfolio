@@ -17,7 +17,7 @@ const Skills = () => {
     },
     {
       title: "Tools & Ecosystems",
-      skills: ["Git/GitHub", "VS Code", "IBM Cloud", "IoT", "Real-Time Systems"]
+      skills: ["Git/GitHub", "VS Code", "Hugging Face", "IBM Cloud", "IoT", "Real-Time Systems"]
     }
   ];
 
