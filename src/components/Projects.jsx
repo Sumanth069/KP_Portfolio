@@ -41,24 +41,8 @@ const Projects = () => {
       description: "Real-time gesture recognition using hand landmark detection (MediaPipe) and OpenCV.",
       tags: ["Python", "MediaPipe", "OpenCV"],
       github: "https://github.com/Sumanth069/Real-Time-Sign-Language-Recognition-using-HandLandmarks",
-      colSpan: "md:col-span-2",
+      colSpan: "md:col-span-3",
       gradient: "from-emerald-100 to-teal-50"
-    },
-    {
-      title: "Plant Disease Detection",
-      description: "CNN-based model for plant disease classification targeted at smart agriculture.",
-      tags: ["CNN", "Deep Learning", "Agriculture AI"],
-      github: "https://github.com/Sumanth069/plant-disease-detection-cnn",
-      colSpan: "md:col-span-2",
-      gradient: "from-green-100 to-lime-50"
-    },
-    {
-      title: "CalmCue",
-      description: "Web platform for ADHD Support with productivity-focused features and an interactive interface.",
-      tags: ["Web Dev", "Mental Wellness", "UI/UX"],
-      github: "https://github.com/Sumanth069",
-      colSpan: "md:col-span-1",
-      gradient: "from-violet-100 to-fuchsia-50"
     }
   ];
 
@@ -117,6 +101,22 @@ const Projects = () => {
               </div>
             </motion.div>
           ))}
+        </div>
+        
+        <div className="mt-12 flex justify-center">
+          <motion.a
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            href="https://github.com/Sumanth069"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-8 py-4 rounded-xl bg-slate-900 dark:bg-white text-white dark:text-slate-900 font-bold hover:bg-slate-800 dark:hover:bg-slate-200 transition-all flex items-center gap-3 shadow-md"
+          >
+            <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+            </svg>
+            View More on GitHub
+          </motion.a>
         </div>
       </motion.div>
     </section>
