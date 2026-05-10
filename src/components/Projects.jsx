@@ -5,11 +5,19 @@ import { ExternalLink } from 'lucide-react';
 const Projects = () => {
   const projects = [
     {
+      title: "SwachBandhu",
+      description: "A next-generation civic social network bridging the gap between citizens and municipal authorities for a cleaner city.",
+      tags: ["Civic Tech", "Social Network", "Web Platform"],
+      github: "https://github.com/Sumanth069/SwachBandhu_Preview",
+      colSpan: "md:col-span-2",
+      gradient: "from-amber-100 to-orange-50"
+    },
+    {
       title: "SameYaar",
       description: "AI Social Platform with intelligent matchmaking system using recommendation logic and scalable frontend.",
       tags: ["React", "AI Matching", "Recommendation System"],
       github: "https://github.com/Sumanth069/SameYaar-Preview",
-      colSpan: "md:col-span-2",
+      colSpan: "md:col-span-1",
       gradient: "from-indigo-100 to-purple-50"
     },
     {
@@ -25,7 +33,7 @@ const Projects = () => {
       description: "AI Surveillance System implementing real-time threat detection and automated alert system.",
       tags: ["Computer Vision", "Real-time Inference", "Alerts"],
       github: "https://github.com/Sumanth069/AEGIS",
-      colSpan: "md:col-span-1",
+      colSpan: "md:col-span-2",
       gradient: "from-rose-100 to-orange-50"
     },
     {
